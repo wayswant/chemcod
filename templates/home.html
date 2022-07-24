@@ -1,0 +1,36 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1> HOMEEE </h1>
+
+{{planck}}
+
+{{pi}}
+
+
+<div>
+
+    <div>
+
+        {% for room in rooms %}
+
+            <div>
+                <h5>{{room.id}} -- {{room.name}}</h5>
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+
+</div>
+
+<!--<form action="/your-name/" method="post">-->
+<!--    <label for="your_name">Your name: </label>-->
+<!--    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">-->
+<!--    <input type="submit" value="OK">-->
+<!--</form>-->
+
+{% endblock %}
+
